@@ -1,0 +1,40 @@
+table Medidas
+	lineageTag: c3a52970-0ff9-4440-9a98-c82bbffa52b5
+
+	measure Sales_made = ```
+			
+			    CALCULATE(
+			        COUNT(bike_buyers[Purchased Bike]),
+			        bike_buyers[Purchased Bike] = "Yes"
+			    )
+			```
+		formatString: 0
+		lineageTag: bcdf7812-535b-4cc1-8502-acbb1a37ff50
+
+	measure Sales_not_completed = ```
+			
+			    CALCULATE(
+			        COUNT(bike_buyers[Purchased Bike]),
+			        bike_buyers[Purchased Bike] = "No"
+			    )
+			```
+		formatString: 0
+		lineageTag: 200bda6e-3845-47f6-b040-f19b20763679
+
+	column Column
+		formatString: 0
+		lineageTag: 68484905-398f-4187-8f11-7a7d39134da7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 09533f5f604b4b6bb6c6f084a9d220a9
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

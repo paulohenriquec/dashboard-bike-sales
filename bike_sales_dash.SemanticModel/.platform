@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "bike_sales_dash"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "112871d0-67d7-46ad-b34b-53d453ef2909"
+  }
+}

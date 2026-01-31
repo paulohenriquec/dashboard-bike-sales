@@ -1,0 +1,133 @@
+table bike_buyers
+	lineageTag: 29cec58c-a66e-4a3f-bfa5-a8b4c9971335
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: fd23d598-dbf9-41a9-8351-365dbceb3b09
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Marital Status'
+		dataType: string
+		lineageTag: 3a4c9531-c621-4cc6-a5eb-dedcacb09e8c
+		summarizeBy: none
+		sourceColumn: Marital Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 75eb8554-b8eb-4dd5-8545-91ef7f85a332
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Income
+		dataType: int64
+		formatString: 0
+		lineageTag: 73ec85c3-6db1-48bf-9acc-be49ae387bb9
+		summarizeBy: sum
+		sourceColumn: Income
+
+		annotation SummarizationSetBy = Automatic
+
+	column Children
+		dataType: int64
+		formatString: 0
+		lineageTag: 32e51bc7-595a-4514-a4f8-a4f39707d878
+		summarizeBy: sum
+		sourceColumn: Children
+
+		annotation SummarizationSetBy = Automatic
+
+	column Education
+		dataType: string
+		lineageTag: 911894ce-178c-40d9-9c7b-da2363658144
+		summarizeBy: none
+		sourceColumn: Education
+
+		annotation SummarizationSetBy = Automatic
+
+	column Occupation
+		dataType: string
+		lineageTag: 49355e5d-1a3a-4507-ab3c-f273ca6207c1
+		summarizeBy: none
+		sourceColumn: Occupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Home Owner'
+		dataType: string
+		lineageTag: f8364af1-8cd0-4fcb-acff-26ddf90a8156
+		summarizeBy: none
+		sourceColumn: Home Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cars
+		dataType: int64
+		formatString: 0
+		lineageTag: 39e9fb93-b2e2-4930-94cc-dde484eb1157
+		summarizeBy: sum
+		sourceColumn: Cars
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Commute Distance'
+		dataType: string
+		lineageTag: 49b01128-2021-4d3c-a5cc-026904af7533
+		summarizeBy: none
+		sourceColumn: Commute Distance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 1aeb74b7-2c6e-46de-af5c-bf5ee2be9511
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 56a47a99-ac7d-46d5-9a5c-67dc163b7969
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Purchased Bike'
+		dataType: string
+		lineageTag: 7109d9c4-6b85-4ae7-b4ac-8224d6309d0d
+		summarizeBy: none
+		sourceColumn: Purchased Bike
+
+		annotation SummarizationSetBy = Automatic
+
+	partition bike_buyers = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\paulo\Desktop\POWER BI\dashboard-bike-sales\bike_buyers.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ID", Int64.Type}, {"Marital Status", type text}, {"Gender", type text}, {"Income", Int64.Type}, {"Children", Int64.Type}, {"Education", type text}, {"Occupation", type text}, {"Home Owner", type text}, {"Cars", Int64.Type}, {"Commute Distance", type text}, {"Region", type text}, {"Age", Int64.Type}, {"Purchased Bike", type text}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each [Marital Status] <> null and [Marital Status] <> ""),
+				    #"Linhas Filtradas1" = Table.SelectRows(#"Linhas Filtradas", each [Gender] <> null and [Gender] <> ""),
+				    #"Linhas Filtradas2" = Table.SelectRows(#"Linhas Filtradas1", each [Income] <> null and [Income] <> ""),
+				    #"Linhas Filtradas3" = Table.SelectRows(#"Linhas Filtradas2", each [Children] <> null and [Children] <> ""),
+				    #"Linhas Filtradas4" = Table.SelectRows(#"Linhas Filtradas3", each [Home Owner] <> null and [Home Owner] <> ""),
+				    #"Linhas Filtradas5" = Table.SelectRows(#"Linhas Filtradas4", each [Cars] <> null and [Cars] <> ""),
+				    #"Linhas Filtradas6" = Table.SelectRows(#"Linhas Filtradas5", each [Age] <> null and [Age] <> "")
+				in
+				    #"Linhas Filtradas6"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

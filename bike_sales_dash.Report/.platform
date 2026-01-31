@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "bike_sales_dash"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a1403788-9c9a-49e0-bfaa-b950c06c7f8a"
+  }
+}
