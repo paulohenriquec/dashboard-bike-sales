@@ -7,5 +7,5 @@ This dashboard aims to show an overview of a bike sales data, there are two over
 
 - [x] I have cleaned all the empty data from the dataset
 - [x] Total costumers per gender
-- [x]Total costumer, completed and not completed sales per education level
+- [x] Total costumer, completed and not completed sales per education level
 - [x] Sales attempts per gender
