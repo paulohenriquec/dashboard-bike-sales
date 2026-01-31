@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "64b047ca725f8853f9e2",
   "position": {
-    "x": 13.605887162714636,
-    "y": 9.4194603434178248,
+    "x": 136.21445978878961,
+    "y": 9.3582453290008125,
     "z": 1000,
-    "height": 54.423548650858542,
-    "width": 565.16762060506949,
+    "height": 54.069861900893585,
+    "width": 565.65393988627136,
     "tabOrder": 1000
   },
   "visual": {
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "BIKE SALES DASHBOARD",
+                    "value": "BIKE SALES OVERVIEW",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "20pt"

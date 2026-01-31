@@ -37,6 +37,17 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "bicicleta6398957088253661.png",
+          "path": "bicicleta6398957088253661.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {

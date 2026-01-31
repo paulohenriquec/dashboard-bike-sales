@@ -94,7 +94,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Região'"
+                  "Value": "'Region'"
                 }
               }
             },
