@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "36923d7263dfd26cfc59",
   "position": {
-    "x": 13.517465475223396,
-    "y": 411.76279447603577,
-    "z": 6002,
-    "height": 276.58813972380182,
-    "width": 360.81234768480914,
-    "tabOrder": 6002
+    "x": 13.803019410496047,
+    "y": 168.39683680805177,
+    "z": 7000,
+    "height": 225.44931703810209,
+    "width": 299.06542056074767,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "treemap",
@@ -176,42 +176,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c86156547d6353e3a147",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "bike_buyers"
-              }
-            },
-            "Property": "Region"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a97b8f58eae07678e160",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "bike_buyers"
-                  }
-                },
-                "Property": "ID"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

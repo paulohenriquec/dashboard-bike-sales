@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "37e99d8964749e15b139",
+  "position": {
+    "x": 862.22861250898643,
+    "y": 9.2020129403306985,
+    "z": 11003,
+    "height": 62.573687994248743,
+    "width": 218.08770668583753,
+    "tabOrder": 11003
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "bike_buyers"
+                    }
+                  },
+                  "Property": "Purchased Bike"
+                }
+              },
+              "queryRef": "bike_buyers.Purchased Bike",
+              "nativeQueryRef": "Purchased Bike",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

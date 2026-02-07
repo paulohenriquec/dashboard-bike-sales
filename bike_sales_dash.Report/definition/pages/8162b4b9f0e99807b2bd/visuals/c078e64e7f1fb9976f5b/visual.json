@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "c078e64e7f1fb9976f5b",
   "position": {
-    "x": 217.31925264012997,
-    "y": 71.746547522339569,
-    "z": 6004,
-    "height": 73.826157595450852,
-    "width": 172.60763606823721,
-    "tabOrder": 6004
+    "x": 13.803019410496047,
+    "y": 80.057512580877074,
+    "z": 8000,
+    "height": 73.616103522645588,
+    "width": 172.99784327821712,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -291,28 +291,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4f6ff5c1db0a8f925b30",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "bike_buyers"
-                  }
-                },
-                "Property": "ID"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

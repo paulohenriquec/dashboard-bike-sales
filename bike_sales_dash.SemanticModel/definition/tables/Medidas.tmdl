@@ -21,6 +21,16 @@ table Medidas
 		formatString: 0
 		lineageTag: 200bda6e-3845-47f6-b040-f19b20763679
 
+	measure Is_home_owner = ```
+			
+			    CALCULATE(
+			        COUNT(bike_buyers[Home Owner]),
+			        bike_buyers[Home Owner] = "Yes"
+			    )
+			```
+		formatString: 0
+		lineageTag: 16d394e6-8486-4650-aec5-cc348f9beea8
+
 	column Column
 		formatString: 0
 		lineageTag: 68484905-398f-4187-8f11-7a7d39134da7

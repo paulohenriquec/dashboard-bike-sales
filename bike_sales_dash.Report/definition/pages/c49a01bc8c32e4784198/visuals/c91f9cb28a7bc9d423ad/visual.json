@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "18e0a698a93c4299dfdd",
+  "name": "c91f9cb28a7bc9d423ad",
   "position": {
-    "x": 389.92688870836719,
-    "y": 411.76279447603577,
-    "z": 6003,
-    "height": 276.58813972380182,
-    "width": 376.4094232331438,
-    "tabOrder": 6003
+    "x": 398,
+    "y": 159,
+    "z": 2000,
+    "height": 238,
+    "width": 360,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "donutChart",
@@ -262,42 +262,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d4bd13925cd58f95786b",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "bike_buyers"
-                  }
-                },
-                "Property": "ID"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "794cf8b49e4ee81da69f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "bike_buyers"
-              }
-            },
-            "Property": "Marital Status"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 1093.8748984565395,
     "y": 9.3582453290008125,
-    "z": 2000,
+    "z": 1000,
     "height": 62.388302193338752,
     "width": 171.56783103168158,
-    "tabOrder": 2000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -110,23 +110,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "199cfe43f7a8cd995c65",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "bike_buyers"
-              }
-            },
-            "Property": "Region"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

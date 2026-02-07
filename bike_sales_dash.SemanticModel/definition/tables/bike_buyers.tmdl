@@ -110,6 +110,22 @@ table bike_buyers
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Age Range' =
+			SWITCH(
+			    TRUE(),
+			    bike_buyers[Age] >= 24 && bike_buyers[Age] <= 34, "24-34",
+			    bike_buyers[Age] > 34 && bike_buyers[Age] <= 44, "35-44",
+			    bike_buyers[Age] > 44 && bike_buyers[Age] <= 54, "45-54",
+			    bike_buyers[Age] > 54 && bike_buyers[Age] <= 64, "55-64",
+			    bike_buyers[Age] > 64 && bike_buyers[Age] <= 74, "65-74",
+			    bike_buyers[Age] > 74 && bike_buyers[Age] <= 84, "75-84",
+			    "85+"
+			)
+		lineageTag: 2c4d5dc9-ab9b-4378-b9d5-df50712c1a19
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition bike_buyers = m
 		mode: import
 		source =

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "278c52036e2d22f56308",
+  "name": "ee1f53df7e39e87afc9f",
   "position": {
     "x": 13.517465475223396,
     "y": 159.09017059301382,
-    "z": 0,
+    "z": 1000,
     "height": 238.11535337124289,
     "width": 360.81234768480914,
-    "tabOrder": 0
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "pieChart",
@@ -297,42 +297,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f0d2178d3ee182719bef",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "bike_buyers"
-              }
-            },
-            "Property": "Gender"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e6087184ee1384c3ade5",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "bike_buyers"
-                  }
-                },
-                "Property": "ID"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

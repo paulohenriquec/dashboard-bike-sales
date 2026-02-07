@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "aa252b9ced3bfce50568",
+  "name": "582c915e6add4ba9093e",
   "position": {
-    "x": 337.71387491013661,
-    "y": 168.39683680805177,
-    "z": 3000,
-    "height": 225.44931703810209,
-    "width": 500.58950395398995,
-    "tabOrder": 3000
+    "x": 14,
+    "y": 423,
+    "z": 11001,
+    "height": 262,
+    "width": 360,
+    "tabOrder": 11001
   },
   "visual": {
-    "visualType": "lineClusteredColumnComboChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,11 +23,11 @@
                       "Entity": "bike_buyers"
                     }
                   },
-                  "Property": "Education"
+                  "Property": "Occupation"
                 }
               },
-              "queryRef": "bike_buyers.Education",
-              "nativeQueryRef": "Education",
+              "queryRef": "bike_buyers.Occupation",
+              "nativeQueryRef": "Occupation",
               "active": true
             }
           ]
@@ -44,49 +44,14 @@
                           "Entity": "bike_buyers"
                         }
                       },
-                      "Property": "ID"
+                      "Property": "Income"
                     }
                   },
-                  "Function": 5
+                  "Function": 0
                 }
               },
-              "queryRef": "CountNonNull(bike_buyers.ID)",
-              "nativeQueryRef": "Total Costumers",
-              "displayName": "Total Costumers"
-            }
-          ]
-        },
-        "Y2": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Sales_made"
-                }
-              },
-              "queryRef": "Medidas.Sales_made",
-              "nativeQueryRef": "Completed sales",
-              "displayName": "Completed sales"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Sales_not_completed"
-                }
-              },
-              "queryRef": "Medidas.Sales_not_completed",
-              "nativeQueryRef": "Not completed sales",
-              "displayName": "Not completed sales"
+              "queryRef": "Sum(bike_buyers.Income)",
+              "nativeQueryRef": "Soma de Income"
             }
           ]
         }
@@ -103,10 +68,10 @@
                         "Entity": "bike_buyers"
                       }
                     },
-                    "Property": "ID"
+                    "Property": "Income"
                   }
                 },
-                "Function": 5
+                "Function": 0
               }
             },
             "direction": "Descending"
@@ -116,48 +81,17 @@
       }
     },
     "objects": {
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#1F2937'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
       "valueAxis": [
         {
           "properties": {
-            "showAxisTitle": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "show": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -167,16 +101,9 @@
           }
         }
       ],
-      "legend": [
+      "categoryAxis": [
         {
           "properties": {
-            "showTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
@@ -195,27 +122,7 @@
                 }
               }
             },
-            "matchLineColor": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "legendMarkerRendering": {
-              "expr": {
-                "Literal": {
-                  "Value": "'lineAndMarker'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "seriesLabels": [
-        {
-          "properties": {
-            "show": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -239,22 +146,17 @@
         },
         {
           "properties": {
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Auto'"
+                }
+              }
+            },
             "enableBackground": {
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
                 }
               }
             },
@@ -269,16 +171,35 @@
                 }
               }
             },
-            "labelPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Auto'"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
           },
           "selector": {
             "metadata": "Medidas.Sales_made"
+          }
+        },
+        {
+          "properties": {
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'OutsideEnd'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CountNonNull(bike_buyers.ID)"
           }
         },
         {
@@ -310,19 +231,36 @@
           "selector": {
             "metadata": "Medidas.Sales_not_completed"
           }
-        },
+        }
+      ],
+      "legend": [
         {
           "properties": {
-            "labelPosition": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'OutsideEnd'"
+                  "Value": "true"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1F2937'"
+                    }
+                  }
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "CountNonNull(bike_buyers.ID)"
           }
         }
       ],
@@ -387,14 +325,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Completed and not completed sales per education level'"
+                  "Value": "'Total income per occupation'"
                 }
               }
             },
-            "alignment": {
+            "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "true"
                 }
               }
             },
@@ -407,6 +345,33 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -439,6 +404,13 @@
               "expr": {
                 "Literal": {
                   "Value": "5D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
