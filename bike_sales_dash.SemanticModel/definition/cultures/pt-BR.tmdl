@@ -1509,7 +1509,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Completed sales": {
+			          "Buyers": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1552,7 +1552,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Not completed sales": {
+			          "Non-buyers": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1562,9 +1562,320 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "bike_buyer.age_range": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "bike_buyers",
+			          "ConceptualProperty": "Age Range"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "age range": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "age variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age series": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age assortment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age collection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age gamut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age selection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age choice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "age array": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "age kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "age sort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "medida.is_home_owner": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Is_home_owner"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is home owner": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Is_home_owner": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "owner": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "is home ownership": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "is home holder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "is home landlord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "is home possessor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "is home proprietor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "is home shareholder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "is home titleholder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "ownership": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "holder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "landlord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "bike_buyer_has_medida_sales_made": {
+			      "Binding": {
+			        "ConceptualEntity": "bike_buyers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bike_buyer": {
+			          "Target": {
+			            "Entity": "bike_buyer"
+			          }
+			        },
+			        "medida.sales_made": {
+			          "Target": {
+			            "Entity": "medida.sales_made"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bike_buyer"
+			            },
+			            "Object": {
+			              "Role": "medida.sales_made"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bike_buyers_have_sales_made"
+			        }
+			      ]
+			    },
+			    "medida_has_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.column": {
+			          "Target": {
+			            "Entity": "medida.column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_columns"
+			        }
+			      ]
+			    },
 			    "bike_buyer_has_purchased_bike": {
 			      "Binding": {
 			        "ConceptualEntity": "bike_buyers"
@@ -2144,72 +2455,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medida_has_column": {
-			      "Binding": {
-			        "ConceptualEntity": "Medidas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "medida": {
-			          "Target": {
-			            "Entity": "medida"
-			          }
-			        },
-			        "medida.column": {
-			          "Target": {
-			            "Entity": "medida.column"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "medida"
-			            },
-			            "Object": {
-			              "Role": "medida.column"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "medidas_have_columns"
-			        }
-			      ]
-			    },
-			    "bike_buyer_has_medida_sales_made": {
-			      "Binding": {
-			        "ConceptualEntity": "bike_buyers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bike_buyer": {
-			          "Target": {
-			            "Entity": "bike_buyer"
-			          }
-			        },
-			        "medida.sales_made": {
-			          "Target": {
-			            "Entity": "medida.sales_made"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bike_buyer"
-			            },
-			            "Object": {
-			              "Role": "medida.sales_made"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bike_buyers_have_sales_made"
-			        }
-			      ]
-			    },
 			    "bike_buyer_has_medida_sales_not_completed": {
 			      "Binding": {
 			        "ConceptualEntity": "bike_buyers"
@@ -2240,6 +2485,72 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "bike_buyers_have_sales_not_completed"
+			        }
+			      ]
+			    },
+			    "bike_buyer_has_age_range": {
+			      "Binding": {
+			        "ConceptualEntity": "bike_buyers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bike_buyer": {
+			          "Target": {
+			            "Entity": "bike_buyer"
+			          }
+			        },
+			        "bike_buyer.age_range": {
+			          "Target": {
+			            "Entity": "bike_buyer.age_range"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bike_buyer"
+			            },
+			            "Object": {
+			              "Role": "bike_buyer.age_range"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bike_buyers_have_age_ranges"
+			        }
+			      ]
+			    },
+			    "bike_buyer_has_medida_is_home_owner": {
+			      "Binding": {
+			        "ConceptualEntity": "bike_buyers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bike_buyer": {
+			          "Target": {
+			            "Entity": "bike_buyer"
+			          }
+			        },
+			        "medida.is_home_owner": {
+			          "Target": {
+			            "Entity": "medida.is_home_owner"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bike_buyer"
+			            },
+			            "Object": {
+			              "Role": "medida.is_home_owner"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bike_buyers_have_is_home_owner"
 			        }
 			      ]
 			    }

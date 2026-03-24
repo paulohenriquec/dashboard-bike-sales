@@ -1,16 +1,16 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c91f9cb28a7bc9d423ad",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "0558d9637cf31915a3ec",
   "position": {
-    "x": 398,
-    "y": 159,
-    "z": 2000,
-    "height": 238,
-    "width": 360,
-    "tabOrder": 2000
+    "x": 16,
+    "y": 424,
+    "z": 4000,
+    "height": 272,
+    "width": 520,
+    "tabOrder": 4000
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "pieChart",
     "query": {
       "queryState": {
         "Category": {
@@ -158,8 +158,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 5,
-                      "Percent": -0.5
+                      "ColorId": 0,
+                      "Percent": -0.1
                     }
                   }
                 }
@@ -202,7 +202,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total costumers per marital status'"
+                  "Value": "'Marital status of the costumers'"
                 }
               }
             },
@@ -254,6 +254,19 @@
                       "Percent": -0.5
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

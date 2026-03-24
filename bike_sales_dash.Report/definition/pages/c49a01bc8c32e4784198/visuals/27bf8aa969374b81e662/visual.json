@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "582c915e6add4ba9093e",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "27bf8aa969374b81e662",
   "position": {
-    "x": 14,
-    "y": 423,
-    "z": 11001,
-    "height": 262,
-    "width": 360,
-    "tabOrder": 11001
+    "x": 16,
+    "y": 424,
+    "z": 1000,
+    "height": 247.99999999999997,
+    "width": 304,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -47,11 +47,11 @@
                       "Property": "Income"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(bike_buyers.Income)",
-              "nativeQueryRef": "Soma de Income"
+              "nativeQueryRef": "Média de Income"
             }
           ]
         }
@@ -71,7 +71,7 @@
                     "Property": "Income"
                   }
                 },
-                "Function": 0
+                "Function": 1
               }
             },
             "direction": "Descending"

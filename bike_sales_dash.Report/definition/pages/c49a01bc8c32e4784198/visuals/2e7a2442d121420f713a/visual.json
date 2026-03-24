@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "aa252b9ced3bfce50568",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "2e7a2442d121420f713a",
   "position": {
-    "x": 337.71387491013661,
-    "y": 168.39683680805177,
-    "z": 3000,
-    "height": 225.44931703810209,
-    "width": 500.58950395398995,
-    "tabOrder": 3000
+    "x": 456,
+    "y": 96,
+    "z": 4000,
+    "height": 224,
+    "width": 536,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -70,8 +70,8 @@
                 }
               },
               "queryRef": "Medidas.Sales_made",
-              "nativeQueryRef": "Completed sales",
-              "displayName": "Completed sales"
+              "nativeQueryRef": "Buyers",
+              "displayName": "Buyers"
             },
             {
               "field": {
@@ -85,8 +85,8 @@
                 }
               },
               "queryRef": "Medidas.Sales_not_completed",
-              "nativeQueryRef": "Not completed sales",
-              "displayName": "Not completed sales"
+              "nativeQueryRef": "Non-buyers",
+              "displayName": "Non-buyers"
             }
           ]
         }
@@ -387,7 +387,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Completed and not completed sales per education level'"
+                  "Value": "'Total costumers per education level'"
                 }
               }
             },

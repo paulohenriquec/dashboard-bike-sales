@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "278fa75c3c2c196e71d1",
   "position": {
-    "x": 398.44716031631918,
-    "y": 423.29259525521212,
-    "z": 6000,
-    "height": 262.25736879942491,
-    "width": 355.19769949676493,
-    "tabOrder": 6000
+    "x": 552,
+    "y": 424,
+    "z": 1000,
+    "height": 272,
+    "width": 712,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "columnChart",
@@ -36,31 +36,22 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "bike_buyers"
+                        }
+                      },
+                      "Property": "Purchased Bike"
                     }
                   },
-                  "Property": "Sales_made"
+                  "Function": 5
                 }
               },
-              "queryRef": "Medidas.Sales_made",
-              "nativeQueryRef": "Sales_made"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Sales_not_completed"
-                }
-              },
-              "queryRef": "Medidas.Sales_not_completed",
-              "nativeQueryRef": "Sales_not_completed"
+              "queryRef": "CountNonNull(bike_buyers.Purchased Bike)",
+              "nativeQueryRef": "Contagem de Purchased Bike"
             }
           ]
         }
@@ -69,13 +60,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medidas"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "bike_buyers"
+                      }
+                    },
+                    "Property": "Purchased Bike"
                   }
                 },
-                "Property": "Sales_made"
+                "Function": 5
               }
             },
             "direction": "Descending"
@@ -177,8 +173,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#10B981'"
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
                     }
                   }
                 }
@@ -186,7 +183,30 @@
             }
           },
           "selector": {
-            "metadata": "Medidas.Sales_made"
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "bike_buyers"
+                          }
+                        },
+                        "Property": "Gender"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Male'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         },
         {
@@ -196,7 +216,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E11D48'"
+                      "Value": "'#B851A0'"
                     }
                   }
                 }
@@ -204,7 +224,30 @@
             }
           },
           "selector": {
-            "metadata": "Medidas.Sales_not_completed"
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "bike_buyers"
+                          }
+                        },
+                        "Property": "Gender"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Female'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       ]
@@ -216,7 +259,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Sales attempts per gender'"
+                  "Value": "'Gender distribution'"
                 }
               }
             },
@@ -268,6 +311,19 @@
                       "Percent": -0.5
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

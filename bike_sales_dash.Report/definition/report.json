@@ -1,12 +1,21 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
   "themeCollection": {
     "baseTheme": {
-      "name": "CY25SU12",
+      "name": "CY26SU02",
       "reportVersionAtImport": {
-        "visual": "2.5.0",
+        "visual": "2.6.0",
         "report": "3.1.0",
         "page": "2.3.0"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "AccessibleTidal",
+      "reportVersionAtImport": {
+        "visual": "2.7.0",
+        "report": "3.2.0",
+        "page": "2.3.1"
       },
       "type": "SharedResources"
     }
@@ -45,8 +54,13 @@
       "type": "SharedResources",
       "items": [
         {
-          "name": "CY25SU12",
-          "path": "BaseThemes/CY25SU12.json",
+          "name": "AccessibleTidal",
+          "path": "BuiltInThemes/AccessibleTidal.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "CY26SU02",
+          "path": "BaseThemes/CY26SU02.json",
           "type": "BaseTheme"
         }
       ]
@@ -56,8 +70,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "bicicleta6398957088253661.png",
-          "path": "bicicleta6398957088253661.png",
+          "name": "no-mundo-todo045301557174747376.png",
+          "path": "no-mundo-todo045301557174747376.png",
           "type": "Image"
         }
       ]

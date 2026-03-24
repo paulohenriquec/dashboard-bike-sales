@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "64b047ca725f8853f9e2",
   "position": {
-    "x": 136.21445978878961,
-    "y": 9.3582453290008125,
+    "x": 312,
+    "y": 16,
     "z": 0,
-    "height": 54.069861900893585,
-    "width": 565.65393988627136,
+    "height": 48,
+    "width": 656,
     "tabOrder": 0
   },
   "visual": {
@@ -19,13 +19,15 @@
               {
                 "textRuns": [
                   {
-                    "value": "BIKE SALES OVERVIEW",
+                    "value": "Bike Sales - Overview of Demographic Data",
                     "textStyle": {
                       "fontWeight": "bold",
+                      "fontFamily": "Calibri",
                       "fontSize": "20pt"
                     }
                   }
-                ]
+                ],
+                "horizontalTextAlignment": "center"
               }
             ]
           }
