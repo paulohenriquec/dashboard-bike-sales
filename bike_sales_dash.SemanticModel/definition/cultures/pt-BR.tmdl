@@ -1481,7 +1481,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Sales_made"
+			          "ConceptualProperty": "Buyers"
 			        }
 			      },
 			      "State": "Generated",
@@ -1524,7 +1524,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Sales_not_completed"
+			          "ConceptualProperty": "Non-buyers"
 			        }
 			      },
 			      "State": "Generated",

@@ -42,7 +42,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Sales_made"
+                  "Property": "Buyers"
                 }
               },
               "queryRef": "Medidas.Sales_made",
@@ -56,7 +56,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Sales_not_completed"
+                  "Property": "Non-buyers"
                 }
               },
               "queryRef": "Medidas.Sales_not_completed",
@@ -75,7 +75,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Sales_made"
+                "Property": "Buyers"
               }
             },
             "direction": "Descending"

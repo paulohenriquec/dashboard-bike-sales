@@ -1,7 +1,7 @@
 table Medidas
 	lineageTag: c3a52970-0ff9-4440-9a98-c82bbffa52b5
 
-	measure Sales_made = ```
+	measure Buyers = ```
 			
 			    CALCULATE(
 			        COUNT(bike_buyers[Purchased Bike]),
@@ -11,7 +11,7 @@ table Medidas
 		formatString: 0
 		lineageTag: bcdf7812-535b-4cc1-8502-acbb1a37ff50
 
-	measure Sales_not_completed = ```
+	measure Non-buyers = ```
 			
 			    CALCULATE(
 			        COUNT(bike_buyers[Purchased Bike]),
@@ -30,6 +30,10 @@ table Medidas
 			```
 		formatString: 0
 		lineageTag: 16d394e6-8486-4650-aec5-cc348f9beea8
+
+	measure Conversion_ratio = DIVIDE([Buyers], COUNT(bike_buyers[ID]))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 4a295b4e-9ab2-49b6-9b14-4e72cfc0b8dc
 
 	column Column
 		formatString: 0

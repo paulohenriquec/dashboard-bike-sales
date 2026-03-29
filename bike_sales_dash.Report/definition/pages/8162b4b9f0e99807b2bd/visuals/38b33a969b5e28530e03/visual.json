@@ -1,54 +1,74 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "eff68fd854ce6105b56d",
+  "name": "38b33a969b5e28530e03",
   "position": {
-    "x": 16,
-    "y": 152,
-    "z": 5000,
+    "x": 14.366642703091301,
+    "y": 388,
+    "z": 8000,
     "height": 80,
     "width": 168,
-    "tabOrder": 5000
+    "tabOrder": 8000
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "cardVisual",
     "query": {
       "queryState": {
-        "Values": {
+        "Data": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "bike_buyers"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "Purchased Bike"
+                  "Property": "Buyers"
                 }
               },
-              "queryRef": "bike_buyers.Purchased Bike",
-              "nativeQueryRef": "Purchased Bike",
-              "active": true
+              "queryRef": "Medidas.Sales_made",
+              "nativeQueryRef": "Buyers"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Buyers"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
-      "data": [
+      "divider": [
         {
           "properties": {
-            "mode": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
+                  "Value": "false"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
-      "header": [
+      "fillCustom": [
         {
           "properties": {
             "show": {
@@ -61,9 +81,70 @@
           }
         }
       ],
-      "general": [
+      "outline": [
         {
-          "properties": {}
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "value": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
         }
       ]
     },
@@ -74,7 +155,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Costumer'"
+                  "Value": "'Buyers'"
                 }
               }
             },
